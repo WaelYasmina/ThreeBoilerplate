@@ -9,3 +9,7 @@ Wanna use it? okay then just follow these simple steps:
 3. Open the terminal, type this command: npm install
 4. Ctrl + click on the server link "http://localhost:1234" to open the app in your browser;
 5. Have fun!
+
+• The ./static folder is where you put the images and 3D models.
+
+• The the ./src/ is where you put your Javascript and CSS folders and files.
