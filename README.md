@@ -1,6 +1,6 @@
 # ThreeBoilerplate
 
-This is the boilerplate I'm using for my Three.js tutorials.
+This is the boilerplate that I'm using for my Three.js tutorials.
 
 Wanna use it? okay then just follow these simple steps:
 
