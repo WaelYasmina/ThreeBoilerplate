@@ -10,10 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "three": "^0.144.0"
+    "three": "^0.146.0"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.4.0",
+    "parcel": "^2.7.0",
     "parcel-reporter-static-files-copy": "^1.3.4"
   },
   "staticFiles": {
