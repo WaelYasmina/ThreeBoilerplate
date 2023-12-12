@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "three": "^0.151.3"
+    "three": "^0.159.0"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.4.0",
