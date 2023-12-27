@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wael Yasmina",
   "license": "ISC",
   "dependencies": {
-    "three": "^0.159.0"
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.4.0",
