@@ -11,4 +11,4 @@ Wanna use it? okay then just follow these simple steps:
 6. Ctrl + click on the server link "http://localhost:5173/" to open the app in your browser;
 7. Have fun!
 
-• The ./public folder is where you put the images and 3D models.
+• The /public folder is where you put the images and 3D models.
