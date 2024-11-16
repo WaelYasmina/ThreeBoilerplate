@@ -10,7 +10,7 @@
   "author": "Wael Yasmina",
   "license": "ISC",
   "dependencies": {
-    "three": "^0.166.0"
+    "three": "^0.170.0"
   },
   "devDependencies": {
     "vite": "^5.3.2"
