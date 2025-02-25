@@ -1,5 +1,7 @@
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { MapControls } from 'three/examples/jsm/controls/MapControls.js';
 
 const renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -16,21 +18,29 @@ const camera = new THREE.PerspectiveCamera(
     1000
 );
 
+const loader = new GLTFLoader();
+loader.load('/sporting_village.glb', function(glb) {
+    const model = glb.scene;
+    scene.add(model);
+    model.position.set(0, 0, 0);
+}, undefined, function(error) {
+    console.error('An error happened', error);
+});
 // Sets orbit control to move the camera around.
-const orbit = new OrbitControls(camera, renderer.domElement);
+const controls = new MapControls(camera, renderer.domElement);
 
 // Camera positioning.
 camera.position.set(6, 8, 14);
 // Has to be done everytime we update the camera position.
-orbit.update();
+controls.update();
 
 // Creates a 12 by 12 grid helper.
-const gridHelper = new THREE.GridHelper(12, 12);
-scene.add(gridHelper);
+// const gridHelper = new THREE.GridHelper(12, 12);
+// scene.add(gridHelper);
 
-// Creates an axes helper with an axis length of 4.
-const axesHelper = new THREE.AxesHelper(4);
-scene.add(axesHelper);
+// // Creates an axes helper with an axis length of 4.
+// const axesHelper = new THREE.AxesHelper(4);
+// scene.add(axesHelper);
 
 function animate() {
     renderer.render(scene, camera);
